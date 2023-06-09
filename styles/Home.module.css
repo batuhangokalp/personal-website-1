@@ -1,0 +1,359 @@
+.layout {
+  margin: -8px;
+  overflow: hidden;
+  padding: 0;
+  user-select: none;
+  background-color: #0d0d0d;
+}
+
+.container {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.allHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  height: 88px;
+  border-bottom: 1px solid #a6a6a6;
+}
+
+.navigationLinks {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-right: 4rem;
+}
+.navigationLinks a {
+  text-decoration: none;
+  font-family: "Wix Madefor Display", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: #f2f2f2;
+  margin: auto;
+  width: 7rem;
+  height: 1rem;
+  text-align: center;
+}
+.navigationLinks a:hover {
+  color: #55a7d9;
+}
+
+.allFooter {
+  height: 340px;
+  width: 100%;
+  box-shadow: 0px -4px 18px 11px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("/pictures/Footer.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contactFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  position: absolute;
+  margin-left: 7rem;
+}
+
+.contactFooter h5 {
+  font-family: "Wix Madefor Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #d9d9d9;
+}
+.contactFooter span {
+  font-family: "Wix Madefor Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: lowercase;
+  color: #a6a6a6;
+}
+.dividerFooter {
+  width: 177px;
+  height: 0px;
+  border: 0.5px solid #55a7d9;
+}
+
+.socialIconsFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 14px;
+  width: 169.5px;
+  height: 24.01px;
+}
+
+.personalContact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  width: 169px;
+  height: 72px;
+  flex: none;
+  order: 4;
+}
+
+.phone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 14px;
+  width: 112px;
+  height: 24px;
+}
+
+.mail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 14px;
+  width: 149px;
+  height: 24px;
+}
+
+.designProcessContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 0px;
+  gap: 48px;
+}
+.designProcessContainer h2 {
+  font-family: "Wix Madefor Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+  text-align: center;
+  color: #55a7d9;
+}
+
+.allProcesses {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-around;
+}
+
+.eachProcess {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  gap: 56px;
+  width: 180px;
+  height: 291px;
+  background: #0d0d0d;
+  border: 1px solid #000000;
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  opacity: 0.5;
+}
+
+.eachProcess:hover {
+  opacity: 1;
+}
+
+.eachProcess span {
+  font-family: "Wix Madefor Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.mainTopContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainTop {
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.mainTopLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  width: 50%;
+}
+.mainTopLeftText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  width: 100%;
+  border-width: 0px 0px 1px 1px;
+  border-style: solid;
+  border-color: #a6a6a6;
+}
+.text {
+  display: flex;
+  flex-direction: row;
+  height: 3.5rem;
+  align-items: center;
+}
+
+.text h3 {
+  font-family: "Robostic";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 100%;
+  letter-spacing: 0.75em;
+  color: #f2f2f2;
+}
+
+.text h5 {
+  font-family: "Robostic";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 1.75em;
+  color: #f2f2f2;
+}
+
+.text h4 {
+  font-family: "Robostic";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0.5em;
+  color: #fff;
+}
+
+.mainTopRight {
+  width: 40%;
+}
+
+.sideBar {
+  display: none;
+}
+
+.accordion {
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
+  font-weight: 300;
+}
+
+.mainItems {
+  background-color: transparent;
+  border: hidden;
+  cursor: pointer;
+}
+.hamburgerMenuLinks {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 444;
+  background-color: #fff;
+  opacity: 0.9;
+}
+.hamburgerMenuLinks a {
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  color: #0d0d0d;
+}
+.hamburgerMenuLinks a:hover {
+  background-color: #0d0d0d;
+  color: #fff;
+}
+.hamburgerMenuLinks:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 958px) {
+  .allHeader {
+    height: 60px;
+  }
+  .navigationLinks {
+    display: none;
+  }
+  .sideBar {
+    display: flex;
+  }
+  .mainTopRight {
+    display: none;
+  }
+  .mainTopLeft {
+    width: 100%;
+  }
+  .mainTopLeftText {
+    border: none;
+  }
+  .text h3 {
+    font-size: 34px;
+    line-height: 100%;
+  }
+
+  .text h5 {
+    font-size: 15px;
+    line-height: 100%;
+  }
+
+  .text h4 {
+    font-size: 23px;
+    line-height: 100%;
+  }
+  .allProcesses {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactFooter {
+    margin-left: 4.5rem;
+  }
+}
