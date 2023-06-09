@@ -3,6 +3,7 @@ import Meta from "@/components/GlobalComponents/Meta";
 import React from "react";
 import styles from "../styles/About.module.css";
 import ExperienceAndSkills from "@/components/AboutPageComponents/ExperienceAndSkills";
+import AboutMe from "@/components/AboutPageComponents/AboutMe";
 
 const about = () => {
   return (
@@ -12,7 +13,8 @@ const about = () => {
         keywords={"graphic desing, graphic, design, ui, ux, seo"}
       />
       <div className={styles.container}>
-        <ExperienceAndSkills/>
+        <AboutMe />
+        <ExperienceAndSkills />
         <Certificates />
       </div>
     </>
