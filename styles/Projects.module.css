@@ -1,5 +1,180 @@
+@font-face {
+  font-family: "MyCustomFont";
+  src: url(../public/fonts/Suissnord-aJR9.ttf);
+}
+
 .container {
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+.projectsHeader {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.headerContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
+  width: 85%;
+}
+
+.headerContent h1 {
+  font-family: "MyCustomFont";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 100%;
+  color: #f2f2f2;
+  letter-spacing: 0.5rem;
+}
+.allProjectsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.allProjects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 85%;
+  margin-bottom: 8rem;
+}
+.allProjects h1 {
+  font-family: "Wix Madefor Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: #55a7d9;
+}
+.seperator {
+  display: flex;
+  flex-direction: column;
+  height: 1px;
+  width: 100%;
+  background-color: #55a7d9;
+}
+.projects {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.eachProject {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 47%;
+  position: relative;
+  border: 1px solid #595959;
+  margin-top: 2rem;
+}
+.projectsContent {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.projectsContent h3 {
+  font-family: "Wix Madefor Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  color: #f2f2f2;
+  margin-bottom: -0.2rem;
+}
+.projectsContent h4 {
+  font-family: "Wix Madefor Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2rem;
+  text-transform: capitalize;
+  color: #a6a6a6;
+}
+.projectsContent span {
+  font-family: "Wix Madefor Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #595959;
+}
+.imgProjects {
+  position: relative;
+  left: -75px;
+  top: 0px;
+  z-index: 4;
+}
+.linkDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 2rem 0;
+}
+.behanceLink {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  width: 216px;
+  height: 18px;
+  background: #f2f2f2;
+  border-radius: 5px;
+}
+.behanceLink a {
+  text-decoration: none;
+  text-align: center;
+}
+.behanceLink span {
+  font-family: "Wix Madefor Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: #0d0d0d;
+  text-align: center;
+}
+@media only screen and (max-width: 958px) {
+  .headerContent {
+    justify-content: center;
   }
+  .headerContent h1 {
+    font-size: 36px;
+  }
+}
+@media only screen and (max-width: 558px) {
+  .img {
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 1258px) {
+  .projects {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .eachProject {
+    width: 100%;
+    border: none;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #595959;
+  }
+  .imgProjects {
+    left: -10px;
+    width: 40%;
+  }
+  .projectsContent {
+    width: 70%;
+  }
+}
