@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "MyCustomFont";
+  src: url(../public/fonts/Suissnord-aJR9.ttf);
+}
 .layout {
   margin: -8px;
   overflow: hidden;
@@ -239,7 +243,7 @@
 }
 
 .text h3 {
-  font-family: "Robostic";
+  font-family: "MyCustomFont";
   font-style: normal;
   font-weight: 500;
   font-size: 44px;
@@ -249,7 +253,7 @@
 }
 
 .text h5 {
-  font-family: "Robostic";
+  font-family: "MyCustomFont";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -259,7 +263,7 @@
 }
 
 .text h4 {
-  font-family: "Robostic";
+  font-family: "MyCustomFont";
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
