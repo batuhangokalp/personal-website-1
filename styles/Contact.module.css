@@ -1,5 +1,140 @@
+@font-face {
+  font-family: "MyCustomFont";
+  src: url(../public/fonts/Suissnord-aJR9.ttf);
+}
+
 .container {
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+.contactHeader {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.headerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0px;
+  width: 85%;
+}
+.firstHeader {
+  font-family: "MyCustomFont";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 100%;
+  color: #f2f2f2;
+  letter-spacing: 0.5rem;
+}
+.firstHeader span {
+  font-family: "MyCustomFont";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 100%;
+  color: #55a7d9;
+  letter-spacing: 0.5rem;
+}
+.allContactContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.contactContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0px;
+  width: 85%;
+}
+.img {
+  display: flex;
+  flex-direction: column;
+}
+.allContactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  gap: 24px;
+  height: 30rem;
+  width: 100%;
+}
+.contactForm {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 0px;
+  width: 65%;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.inputs {
+  background-color: #fff;
+  border: none;
+}
+.label {
+  margin-bottom: 1rem;
+  font-family: "Wix Madefor Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #ffffff;
+}
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 65%;
+}
+.sendMessage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #f2f2f2;
+  border-radius: 5px;
+  height: 3rem;
+}
+.sendMessage span {
+  font-family: "Wix Madefor Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: #0d0d0d;
+}
+@media only screen and (max-width: 958px) {
+  .contactContainer {
+    flex-direction: column;
   }
+  .img {
+    width: 100%;
+    margin: 5rem 0;
+  }
+  .contactForm {
+    width: 100%;
+  }
+  .button {
+    width: 100%;
+  }
+  .firstHeader {
+    font-size: 48px;
+  }
+  .firstHeader span {
+    font-size: 48px;
+  }
+}
