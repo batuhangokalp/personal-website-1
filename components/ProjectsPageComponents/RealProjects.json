@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "h3Header": "Orca Van",
+    "h4Content": "designed for trade users who wants to sell with a van.",
+    "span": "Orca Van is a mobile who people sales products with vans. It allows employees to keep stock and view sales and purchases. They can buy products from wholesalers and sale them for markets.",
+    "imgSrc": "/pictures/OrcaVan.png",
+    "imgHeight": 319,
+    "imgWidth": 255
+  },
+  {
+    "id": 2,
+    "h3Header": "Orca Warehouse",
+    "h4Content": "It is an application that allows warehouse workers to record the entry and exit of goods.",
+    "span": "Orca warehouse is an application where warehouse employees keep stock of goods entry and exit with barcode scanning and transfer them.",
+    "imgSrc": "/pictures/OrcaWarehouse.png",
+    "imgHeight": 386,
+    "imgWidth": 200
+  },
+  {
+    "id": 3,
+    "h3Header": "Orca E-commerce",
+    "h4Content": "Designed for Orca’s retail Costumers.",
+    "span": "I prepared and designed a template of e-commerce website for Costumers of Orca referenced by brand named ‘’Expo Food Midlands’’",
+    "imgSrc": "/pictures/OrcaECommerce.png",
+    "imgHeight": 248,
+    "imgWidth": 300
+  }
+]

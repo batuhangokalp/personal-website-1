@@ -1,0 +1,38 @@
+[
+  {
+    "id": 4,
+    "h3Header": "WingFood",
+    "h4Content": "Foodwing is a food Delivery app.",
+    "span": "Foodwing mobile application, provide to people who want to delivery fast and fresh foods wherever and whenever they want.",
+    "imgSrc": "/pictures/wingfood.png",
+    "imgHeight": 346,
+    "imgWidth": 173
+  },
+  {
+    "id": 5,
+    "h3Header": "Glotech ",
+    "h4Content": "all technology products bring together in one app.",
+    "span": "Glotech is a mobile application for reach to products of technology brands. It allows the best customer experience with user-friendly, easy to use and navigate, secure payment methods. Glotech will increase its presence and with this application and reach to potential customers. It aim to provide more services to technology lovers and users.",
+    "imgSrc": "/pictures/glotech.png",
+    "imgHeight": 344,
+    "imgWidth": 170
+  },
+  {
+    "id": 6,
+    "h3Header": "GameCore",
+    "h4Content": "The largest Game Store Experinence",
+    "span": "This application designed for people who  interested in the games, in order to provide more convenient and easy reach. Users can follow their interests and news about games. There is an easy option for them.",
+    "imgSrc": "/pictures/gamecore.png",
+    "imgHeight": 351,
+    "imgWidth": 173
+  },
+  {
+    "id": 7,
+    "h3Header": "Glotech E-commerce",
+    "h4Content": "all technology products bring together in one Website.",
+    "span": "Glotech is a E-commerce website for reach to products of technology brands. It allows the best customer experience with user-friendly, easy to use and navigate, secure payment methods. Glotech will increase its presence and with this website and reach to potential customers. It aim to provide more services to technology lovers and users.",
+    "imgSrc": "/pictures/glotechECommerce.png",
+    "imgHeight": 300,
+    "imgWidth": 199
+  }
+]
