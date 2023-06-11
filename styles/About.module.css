@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "MyCustomFont";
+  src: url(../public/fonts/Suissnord-aJR9.ttf);
+}
+
 .container {
   overflow: hidden;
   padding: 0;
@@ -171,6 +176,171 @@
   display: none;
 }
 
+.aboutMeAllContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 3rem 0;
+}
+.aboutMe {
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.imgAndHeader {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 40%;
+}
+.header {
+  position: absolute;
+  width: 393px;
+  height: 128px;
+  left: -15px;
+  top: -35px;
+  font-family: "MyCustomFont";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 100%;
+  color: #f2f2f2;
+  z-index: 1;
+  letter-spacing: 1rem;
+}
+.header2 {
+  position: absolute;
+  width: 393px;
+  height: 128px;
+  left: -15px;
+  top: 25px;
+  font-family: "MyCustomFont";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 100%;
+  color: #55d992;
+  z-index: 1;
+  letter-spacing: 1rem;
+}
+.img {
+  margin-top: 2rem;
+  border: 1px solid #595959;
+}
+.allInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 770px;
+}
+.eachInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+  border: 1px solid #595959;
+}
+.title {
+  font-family: "Wix Madefor Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #595959;
+}
+
+.content {
+  font-family: "Wix Madefor Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+}
+.allSkills {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 85%;
+  padding: 0px;
+  margin-top: 1rem;
+}
+.leftSkills {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+}
+.rightSkills {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  height: 15rem;
+  width: 50%;
+}
+.eachSkill {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  height: 5rem;
+}
+.full {
+  position: relative;
+  width: 65%;
+  height: 14px;
+  left: 0px;
+  top: 0px;
+  background: rgba(217, 217, 217, 0.25);
+}
+.fullFigma {
+  position: absolute;
+  width: 75%;
+  height: 14px;
+  left: 0px;
+  top: 0px;
+  background: #55a7d9;
+}
+.fullAi {
+  position: absolute;
+  width: 65%;
+  height: 14px;
+  left: 0px;
+  top: 0px;
+  background: #55a7d9;
+}
+.fullId {
+  position: absolute;
+  width: 45%;
+  height: 14px;
+  left: 0px;
+  top: 0px;
+  background: #55a7d9;
+}
+.fullPs {
+  position: absolute;
+  width: 70%;
+  height: 14px;
+  left: 0px;
+  top: 0px;
+  background: #55a7d9;
+}
+.fullAe {
+  position: absolute;
+  width: 20%;
+  height: 14px;
+  left: 0px;
+  top: 0px;
+  background: #55a7d9;
+}
 @media only screen and (max-width: 958px) {
   .allCertificates {
     flex-direction: column;
@@ -192,15 +362,36 @@
     margin: auto;
     padding: 2rem 0;
   }
+  .allInfo {
+    width: 85%;
+  }
+  .allSkills {
+    flex-direction: column;
+    width: 180%;
+  }
+  .rightSkills{
+    margin-top: -5rem;
+  }
+  .eachSkill {
+    padding-left: 2.5rem;
+  }
 }
 
 @media only screen and (max-width: 1298px) {
   .experiences {
     flex-direction: column;
   }
-
   .experiencesCard {
     height: auto;
     width: 60%;
+  }
+  .aboutMe {
+    flex-direction: column;
+  }
+  .img {
+    margin: 2rem;
+  }
+  .imgAndHeader {
+    width: 100%;
   }
 }

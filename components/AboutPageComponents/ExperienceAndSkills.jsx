@@ -2,6 +2,13 @@ import React from "react";
 import styles from "../../styles/About.module.css";
 import { FcNext } from "react-icons/fc";
 import { AiOutlineDown } from "react-icons/ai";
+import { FiFigma } from "react-icons/fi";
+import {
+  SiAdobeillustrator,
+  SiAdobeindesign,
+  SiAdobephotoshop,
+  SiAdobeaftereffects,
+} from "react-icons/si";
 
 const ExperienceAndSkills = () => {
   return (
@@ -36,7 +43,12 @@ const ExperienceAndSkills = () => {
           </div>
         </div>
         <FcNext className={styles.iconRight} color="#55a7d9" size={30} />
-        <AiOutlineDown className={styles.iconDown} color="#55a7d9" size={30} />        <div className={styles.experiencesCard}>
+        <AiOutlineDown
+          className={styles.iconDown}
+          color="#55a7d9"
+          size={30}
+        />{" "}
+        <div className={styles.experiencesCard}>
           <h4>Graphic Designer (Edirne Printing House)</h4>
           <div className={styles.divider}></div>
           <span>
@@ -48,7 +60,12 @@ const ExperienceAndSkills = () => {
           </div>
         </div>
         <FcNext className={styles.iconRight} color="#55a7d9" size={30} />
-        <AiOutlineDown className={styles.iconDown} color="#55a7d9" size={30} />        <div className={styles.experiencesCard}>
+        <AiOutlineDown
+          className={styles.iconDown}
+          color="#55a7d9"
+          size={30}
+        />{" "}
+        <div className={styles.experiencesCard}>
           <h4>UI/UX Designer (Orca Business Solutions)</h4>
           <div className={styles.divider}></div>
           <span>
@@ -62,7 +79,42 @@ const ExperienceAndSkills = () => {
           </div>
         </div>
       </div>
-      <div className={styles.skills}></div>
+      <div className={styles.allSkills}>
+        <div className={styles.leftSkills}>
+          <div className={styles.eachSkill}>
+            <FiFigma size={30} color="#fff"/>
+            <div className={styles.full}>
+              <div className={styles.fullFigma}></div>
+            </div>
+          </div>
+          <div className={styles.eachSkill}>
+            <SiAdobeillustrator size={30} color="#fff"/>
+            <div className={styles.full}>
+              <div className={styles.fullAi}></div>
+            </div>
+          </div>
+          <div className={styles.eachSkill}>
+            <SiAdobeindesign size={30} color="#fff"/>
+            <div className={styles.full}>
+              <div className={styles.fullId}></div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.rightSkills}>
+          <div className={styles.eachSkill}>
+            <SiAdobeaftereffects size={30} color="#fff" />
+            <div className={styles.full}>
+              <div className={styles.fullAe}></div>
+            </div>
+          </div>
+          <div className={styles.eachSkill}>
+            <SiAdobephotoshop size={30} color="#fff" />
+            <div className={styles.full}>
+              <div className={styles.fullPs}></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
