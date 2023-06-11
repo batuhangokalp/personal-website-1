@@ -333,23 +333,23 @@
     display: none;
   }
   .mainTopLeft {
-    width: 100%;
+    width: 80%;
   }
   .mainTopLeftText {
     border: none;
   }
   .text h3 {
-    font-size: 34px;
+    font-size: 30px;
     line-height: 100%;
   }
 
   .text h5 {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 100%;
   }
 
   .text h4 {
-    font-size: 23px;
+    font-size: 20px;
     line-height: 100%;
   }
   .allProcesses {
