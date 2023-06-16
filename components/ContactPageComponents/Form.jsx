@@ -35,24 +35,17 @@ const Form = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "xx",
-        "xx",
-        form.current,
-        "xx"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    emailjs.sendForm("xx", "yy", form.current, "zz").then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
     setOpen(true);
     new Promise((resolve) => setTimeout(resolve, 4000));
-    window.location.reload();
+    e.target.reset();
   };
   return (
     <form className={styles.allContactForm} ref={form} onSubmit={sendEmail}>
@@ -68,6 +61,8 @@ const Form = () => {
             className={styles.inputs}
             value={name}
             onChange={handlename}
+            name="name"
+            variant="standard"
           />
         </div>
         <div className={styles.input}>
@@ -81,6 +76,8 @@ const Form = () => {
             className={styles.inputs}
             value={surname}
             onChange={handleSurname}
+            name="surname"
+            variant="standard"
           />
         </div>
       </div>
@@ -97,6 +94,8 @@ const Form = () => {
             className={styles.inputs}
             value={email}
             onChange={handleEmail}
+            name="email"
+            variant="standard"
           />
         </div>
       </div>
@@ -113,6 +112,8 @@ const Form = () => {
             className={styles.inputs}
             value={message}
             onChange={handleMessage}
+            name="message"
+            variant="standard"
           />
         </div>
       </div>

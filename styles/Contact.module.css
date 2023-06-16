@@ -81,8 +81,8 @@
   padding-left: 1rem;
 }
 .inputs {
-  background-color: #fff;
-  border: none;
+  background-color: #fbfbfb;
+  border-radius: 4px;
 }
 .label {
   margin-bottom: 1rem;
