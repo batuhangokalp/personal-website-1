@@ -131,6 +131,13 @@
   background: #f2f2f2;
   border-radius: 5px;
 }
+.behanceLink:hover {
+  background: radial-gradient(
+    322.37% 4622.16% at -2.55% 13.16%,
+    #55a7d9 0%,
+    #f64cef 100%
+  );
+}
 .behanceLink a {
   text-decoration: none;
   text-align: center;
