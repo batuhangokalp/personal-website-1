@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import styles from "../../styles/Contact.module.css";
-import { Button, TextField } from "@mui/material";
-import emailjs from "emailjs-com";
+import { Alert, Button, Snackbar, TextField } from "@mui/material";
+import emailjs from "@emailjs/browser";
 
 const Form = () => {
   const form = useRef();
@@ -10,6 +10,7 @@ const Form = () => {
   const [surname, setSurname] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [open, setOpen] = useState(false);
 
   const handlename = (event) => {
     setName(event.target.value);
@@ -24,15 +25,22 @@ const Form = () => {
     setMessage(event.target.value);
   };
 
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setOpen(false);
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
         "xx",
-        "yy",
+        "xx",
         form.current,
-        "zz"
+        "xx"
       )
       .then(
         (result) => {
@@ -42,6 +50,9 @@ const Form = () => {
           console.log(error.text);
         }
       );
+    setOpen(true);
+    new Promise((resolve) => setTimeout(resolve, 4000));
+    window.location.reload();
   };
   return (
     <form className={styles.allContactForm} ref={form} onSubmit={sendEmail}>
@@ -109,6 +120,15 @@ const Form = () => {
         <Button type="submit" className={styles.sendMessage}>
           <span>Send Message</span>
         </Button>
+        <Snackbar open={open} autoHideDuration={3000} onClose={handleClose}>
+          <Alert
+            onClose={handleClose}
+            severity="success"
+            sx={{ width: "100%" }}
+          >
+            Message sent successfully!
+          </Alert>
+        </Snackbar>
       </div>
     </form>
   );
