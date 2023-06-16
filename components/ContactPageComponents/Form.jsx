@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import styles from "../../styles/Contact.module.css";
 import { Button, TextField } from "@mui/material";
+import emailjs from "emailjs-com";
 
 const Form = () => {
   const form = useRef();
@@ -23,78 +24,92 @@ const Form = () => {
     setMessage(event.target.value);
   };
 
-  const sendEmail = () => {
-    alert(
-      `Name: ${name} \nSurname: ${surname} \nEmail: ${email} \nMessage: ${message}`
-    );
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "xx",
+        "yy",
+        form.current,
+        "zz"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
   return (
     <form className={styles.allContactForm} ref={form} onSubmit={sendEmail}>
-        <div className={styles.contactForm}>
-          <div className={styles.input}>
-            <label className={styles.label}>Name</label>
-            <TextField
-              required
-              id="name"
-              label="Name"
-              size="small"
-              type="text"
-              className={styles.inputs}
-              value={name}
-              onChange={handlename}
-            />
-          </div>
-          <div className={styles.input}>
-            <label className={styles.label}>Surname</label>
-            <TextField
-              required
-              id="surname"
-              label="Surname"
-              size="small"
-              type="text"
-              className={styles.inputs}
-              value={surname}
-              onChange={handleSurname}
-            />
-          </div>
+      <div className={styles.contactForm}>
+        <div className={styles.input}>
+          <label className={styles.label}>Name</label>
+          <TextField
+            required
+            id="name"
+            label="Name"
+            size="small"
+            type="text"
+            className={styles.inputs}
+            value={name}
+            onChange={handlename}
+          />
         </div>
-        <div className={styles.contactForm}>
-          <div className={styles.input}>
-            <label className={styles.label}>E-Mail</label>
-            <TextField
-              required
-              id="email"
-              label="E-Mail"
-              size="small"
-              type="email"
-              fullWidth
-              className={styles.inputs}
-              value={email}
-              onChange={handleEmail}
-            />
-          </div>
+        <div className={styles.input}>
+          <label className={styles.label}>Surname</label>
+          <TextField
+            required
+            id="surname"
+            label="Surname"
+            size="small"
+            type="text"
+            className={styles.inputs}
+            value={surname}
+            onChange={handleSurname}
+          />
         </div>
-        <div className={styles.contactForm}>
-          <div className={styles.input}>
-            <label className={styles.label}>Message</label>
-            <TextField
-              required
-              id="message"
-              label="Message"
-              type="text"
-              multiline
-              rows={5}
-              className={styles.inputs}
-              value={message}
-              onChange={handleMessage}
-            />
-          </div>
+      </div>
+      <div className={styles.contactForm}>
+        <div className={styles.input}>
+          <label className={styles.label}>E-Mail</label>
+          <TextField
+            required
+            id="email"
+            label="E-Mail"
+            size="small"
+            type="email"
+            fullWidth
+            className={styles.inputs}
+            value={email}
+            onChange={handleEmail}
+          />
         </div>
-        <div className={styles.button}>
-          <Button type="submit" className={styles.sendMessage}>
-            <span>Send Message</span>
-          </Button>
+      </div>
+      <div className={styles.contactForm}>
+        <div className={styles.input}>
+          <label className={styles.label}>Message</label>
+          <TextField
+            required
+            id="message"
+            label="Message"
+            type="text"
+            multiline
+            rows={5}
+            className={styles.inputs}
+            value={message}
+            onChange={handleMessage}
+          />
         </div>
+      </div>
+      <div className={styles.button}>
+        <Button type="submit" className={styles.sendMessage}>
+          <span>Send Message</span>
+        </Button>
+      </div>
     </form>
   );
 };
