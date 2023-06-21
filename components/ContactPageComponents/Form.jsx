@@ -35,14 +35,21 @@ const Form = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm("xx", "yy", form.current, "zz").then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
+    emailjs
+      .sendForm(
+        "service_suahg6s",
+        "template_royyjzb",
+        form.current,
+        "quPzh6gpLYZPf5JFN"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
     setOpen(true);
     new Promise((resolve) => setTimeout(resolve, 4000));
     e.target.reset();
