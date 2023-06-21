@@ -3,6 +3,7 @@ import React from "react";
 import styles from "../../styles/Home.module.css";
 import Link from "next/link";
 import {
+  AiOutlineDribbble,
   AiOutlineFacebook,
   AiOutlineInstagram,
   AiOutlineLinkedin,
@@ -18,7 +19,7 @@ const Footer = () => {
         <h5>Get In Touch With Me</h5>
         <div className={styles.dividerFooter} />
         <div className={styles.socialIconsFooter}>
-          <Link href="#">
+          <Link href="https://www.facebook.com/olcay.dilibal.9/?locale=tr_TR">
             <AiOutlineFacebook color="#9B9B9B" size={30} />
           </Link>
           <Link href="https://www.behance.net/olcaydilibal">
@@ -29,6 +30,9 @@ const Footer = () => {
           </Link>
           <Link href="https://www.instagram.com/olcayy.d">
             <AiOutlineInstagram color="#9B9B9B" size={30} />
+          </Link>
+          <Link href="https://dribbble.com/OlcayD">
+            <AiOutlineDribbble color="#9B9B9B" size={30} />
           </Link>
         </div>
         <div className={styles.dividerFooter} />
