@@ -40,7 +40,7 @@ const AboutMe = () => {
             <span className={styles.content}>
               Hi, I’m Olcay Dilibal,
               <br />
-              <br /> I'm 25 years old and I gratuated at Anadolu University
+              <br /> I am 25 years old and I gratuated at Anadolu University
               department of Public Relations & Adv. I always interested visual
               communication and adv so I improve myselft about art and design. I
               started with adobe programs like Photoshop, Illustration,
@@ -48,7 +48,7 @@ const AboutMe = () => {
               courses about UI/UX design ın Udemy and Uxcell. I love being a
               part of project and contribute it.
               <br />
-              <br /> I’ve knowledge about design princibles, like typography,
+              <br /> I have knowledge about design princibles, like typography,
               color psychology theories, layout, and design system in Figma. I
               take care more orjinality for brands and customers.
             </span>
