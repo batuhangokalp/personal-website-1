@@ -19,7 +19,7 @@ const MainTop = () => {
               </h5>
             </div>
             <div className={styles.text}>
-              <h3 style={{ marginLeft: "1rem" }}>I'M</h3>{" "}
+              <h3 style={{ marginLeft: "1rem" }}>I AM</h3>{" "}
               <h3 style={{ marginLeft: "1rem" }}>OLCAY</h3>
             </div>
             <div className={styles.text}>
