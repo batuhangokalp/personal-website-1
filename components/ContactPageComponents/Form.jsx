@@ -62,7 +62,6 @@ const Form = () => {
           <TextField
             required
             id="name"
-            size="small"
             type="text"
             className={styles.inputs}
             value={name}
@@ -76,7 +75,6 @@ const Form = () => {
           <TextField
             required
             id="surname"
-            size="small"
             type="text"
             className={styles.inputs}
             value={surname}
@@ -92,7 +90,6 @@ const Form = () => {
           <TextField
             required
             id="email"
-            size="small"
             type="email"
             fullWidth
             className={styles.inputs}
